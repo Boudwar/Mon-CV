@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  $('.item').mouseup(function()
+  $('body').mouseup(function()
   {
     $("#steve").show();
     $("#steve2").hide();
   });
-  $('.item').mousedown(function()
+  $('body').mousedown(function()
   {
     $("#steve").hide();
     $("#steve2").show();
@@ -12,20 +12,32 @@ $(document).ready(function(){
 
   $('#profil').click(function(){
     $('.profil').show();
+    $('.competences').hide();
+    $('.experiences').hide();
+    $('.inventaire').hide();
     $('.absolute').addClass("zoom");
     $('.absolute').removeClass("dezoom");
   });
   $('#competences').click(function(){
     $('.competences').show();
+    $('.profil').hide();
+    $('.experiences').hide();
+    $('.inventaire').hide();
     $('.absolute').addClass("zoom");
     $('.absolute').removeClass("dezoom");
   });
   $('#experiences').click(function(){
+    $('.profil').hide();
+    $('.competences').hide();
     $('.experiences').show();
+    $('.inventaire').hide();
     $('.absolute').addClass("zoom");
     $('.absolute').removeClass("dezoom");
   });
   $('#inventaire').click(function(){
+    $('.profil').hide();
+    $('.competences').hide();
+    $('.experiences').hide();
     $('.inventaire').show();
     $('.absolute').addClass("zoom");
     $('.absolute').removeClass("dezoom");
@@ -33,9 +45,11 @@ $(document).ready(function(){
   $('h1').click(function(){
     $('.absolute').removeClass("zoom");
     $('.absolute').addClass("dezoom");
-    $('.profil').hide();
-    $('.competences').hide();
-    $('.experiences').hide();
-    $('.inventaire').hide();
+
+  });
+  $('#herobrine').click(function(){
+    $('body').css("background-image","url('./img/dark.jpg')");
+    $('#steve').attr('src','./img/herobrine.png');
+    $('#steve2').attr('src','./img/herobrine.png');
   });
 });
