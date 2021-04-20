@@ -1,0 +1,41 @@
+$(document).ready(function(){
+  $('.item').mouseup(function()
+  {
+    $("#steve").show();
+    $("#steve2").hide();
+  });
+  $('.item').mousedown(function()
+  {
+    $("#steve").hide();
+    $("#steve2").show();
+  });
+
+  $('#profil').click(function(){
+    $('.profil').show();
+    $('.absolute').addClass("zoom");
+    $('.absolute').removeClass("dezoom");
+  });
+  $('#competences').click(function(){
+    $('.competences').show();
+    $('.absolute').addClass("zoom");
+    $('.absolute').removeClass("dezoom");
+  });
+  $('#experiences').click(function(){
+    $('.experiences').show();
+    $('.absolute').addClass("zoom");
+    $('.absolute').removeClass("dezoom");
+  });
+  $('#inventaire').click(function(){
+    $('.inventaire').show();
+    $('.absolute').addClass("zoom");
+    $('.absolute').removeClass("dezoom");
+  });
+  $('h1').click(function(){
+    $('.absolute').removeClass("zoom");
+    $('.absolute').addClass("dezoom");
+    $('.profil').hide();
+    $('.competences').hide();
+    $('.experiences').hide();
+    $('.inventaire').hide();
+  });
+});

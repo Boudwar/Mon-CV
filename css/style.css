@@ -1,0 +1,154 @@
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+@font-face {
+  font-family: Minecraft;
+  src: url(../Minecraft.ttf);
+}
+body {
+background-image:url("../img/fond.jpg");
+width: 100%;
+height: 100%;
+margin: 0px;
+font-family: "Minecraft";
+font-size: 1em;
+letter-spacing: 2px;
+}
+
+#title{
+  position: relative;
+  left: 35%;
+  top: 15%;
+}
+
+.container{
+  display: flex;
+  flex-flow: column;
+  width: 600px;
+}
+
+.item{
+  width: 600px;
+  height: 66px;
+  background-color: #979494;
+  text-align: center;
+  margin: 5px;
+  border: 3px solid black;
+  color: white;
+  text-shadow: 2px 2px #3E3E3E;
+}
+
+.item:hover{
+  border: 3px solid white;
+}
+
+#menu{
+  position: relative;
+  padding: 0px;
+  top: 25%;
+  left: 33%;
+  width: 600px;
+}
+
+h5{
+  position: absolute;
+  color: yellow;
+  font-size: 1.5em;
+  letter-spacing: 10px;
+  top: 15%;
+  right:35%;
+  text-shadow: 2px 2px #3E3E3E;
+
+  transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -khtml-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  animation: zoom 0.5s infinite;
+}
+
+@keyframes zoom {
+    0% {font-size: 1.5em;}
+    50% {font-size: 1.6em;}
+    70% {font-size: 2em;}
+    90% {font-size: 1.7em;}
+    100% {font-size: 1.5em;}
+}
+
+#steve{
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  height: 600px;
+}
+#steve2{
+  position: absolute;
+  right: 8%;
+  top: 28%;
+  height: 560px;
+  display: none;
+}
+
+.profil,.competences,.inventaire,.experiences{
+  display: none;
+  color: white;
+  position: relative;
+  background-color: #979494;
+  width: 500px;
+  height: auto;
+  padding: 50px;
+  border: 3px solid black;
+  left: 32%;
+  top: 10%;
+}
+
+#dirt{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.absolute{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+
+  z-index: 1;
+}
+
+.zoom{
+  animation: fade 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade {
+  0% {top: -100%;}
+  100% {top: 0%;}
+}
+
+.dezoom{
+  animation: unfade 2s;
+  animation-fill-mode: both;
+}
+@keyframes unfade {
+  0% {top: 0%;}
+  100% {top: -100%;}
+}
+.retour{
+  position: relative;
+  top: 800px;
+  left: 32%;
+  line-height: 66px;
+  margin: 0px;
+}
+h1{
+  font-weight: normal;
+}
+
+.profil{
+
+}
